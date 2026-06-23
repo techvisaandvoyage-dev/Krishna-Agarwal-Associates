@@ -1,263 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Privacy Policy - Krishna Agarwal & Associates, Chartered Accountants">
-  <title>Privacy Policy | Krishna Agarwal & Associates</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #0A2540;
-      --primary-light: #1a3a6b;
-      --accent: #C5A55A;
-      --accent-dark: #B8860B;
-      --bg: #FFFFFF;
-      --bg-alt: #F8F9FA;
-      --gray-light: #E8ECF0;
-      --text: #2C3E50;
-      --text-light: #6B7A8D;
-      --shadow-sm: 0 2px 8px rgba(10, 37, 64, 0.06);
-      --shadow-md: 0 8px 30px rgba(10, 37, 64, 0.08);
-      --shadow-lg: 0 20px 50px rgba(10, 37, 64, 0.12);
-      --radius: 12px;
-      --radius-lg: 20px;
-      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    }
+<html class="light" lang="en" style="scroll-behavior: smooth;">
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Privacy Policy | Krishna Agarwal &amp; Associates</title>
+  <meta name="description"
+    content="Privacy Policy - Krishna Agarwal & Associates, Chartered Accountants.">
+
+  <!-- Material Symbols -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap"
+    rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary": "#022643",
+            "primary-container": "#1e3c5a",
+            "accent-gold": "#F49700",
+            "silver-gray": "#E5E7EB",
+            "outline": "#73777e",
+            "outline-variant": "#c3c6ce",
+            "surface-container": "#edeeef",
+            "on-surface": "#191c1d",
+            "on-surface-variant": "#43474d",
+          },
+          "spacing": {
+            "margin-mobile": "20px",
+            "gutter": "24px",
+            "section-gap-lg": "120px",
+            "section-gap-md": "80px",
+            "container-max": "1280px",
+            "base": "8px",
+            "margin-desktop": "40px"
+          },
+          "fontFamily": {
+            "body-sm": ["Hanken Grotesk"],
+            "headline-md": ["Hanken Grotesk"],
+            "headline-xl": ["Hanken Grotesk"],
+            "body-md": ["Hanken Grotesk"],
+            "label-caps": ["JetBrains Mono"],
+            "body-lg": ["Hanken Grotesk"],
+            "headline-lg": ["Hanken Grotesk"],
+            "headline-lg-mobile": ["Hanken Grotesk"],
+            "numeric-data": ["JetBrains Mono"]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+    }
 
     body {
-      font-family: 'Poppins', sans-serif;
-      color: var(--text);
-      background: var(--bg-alt);
-      line-height: 1.7;
+      background-color: #ffffff;
+      -webkit-font-smoothing: antialiased;
     }
 
-    .container {
-      width: 100%;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 24px;
+    .hero-gradient {
+      background: linear-gradient(135deg, #022643 0%, #1e3c5a 100%);
     }
 
-    header {
-      background: var(--primary);
-      padding: 18px 0;
+    .grid-pattern {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+      background-size: 30px 30px;
     }
 
-    header .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--bg);
-      text-decoration: none;
-    }
-
-    .logo span {
-      color: var(--bg);
-    }
-
-    .back-link {
-      color: rgba(255,255,255,0.75);
-      text-decoration: none;
-      font-size: 0.9rem;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      transition: var(--transition);
-    }
-
-    .back-link:hover {
-      color: var(--accent);
-    }
-
-    .back-link svg {
-      width: 18px;
-      height: 18px;
-      fill: currentColor;
-    }
-
-    .page-content {
-      padding: 60px 0;
-    }
-
-    .page-title {
-      text-align: center;
-      margin-bottom: 48px;
-    }
-
-    .page-title h1 {
-      font-size: 2.2rem;
-      font-weight: 600;
-      color: var(--primary);
-      position: relative;
-      display: inline-block;
-    }
-
-    .page-title h1::after {
+    .nav-item::after {
       content: '';
-      display: block;
-      width: 60px;
-      height: 3px;
-      background: var(--accent);
-      margin: 12px auto 0;
-      border-radius: 2px;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      bottom: -4px;
+      left: 0;
+      background-color: currentColor;
+      transition: width 0.3s ease;
     }
 
-    .privacy-card {
-      background: var(--bg);
-      border-radius: var(--radius-lg);
-      padding: 48px;
-      box-shadow: var(--shadow-md);
-    }
-
-    .privacy-card p {
-      font-size: 0.95rem;
-      color: var(--text-light);
-      line-height: 1.9;
-    }
-
-    .privacy-card p + p {
-      margin-top: 16px;
-    }
-
-    .contact-details {
-      margin-top: 24px;
-      padding-top: 24px;
-      border-top: 1px solid var(--gray-light);
-    }
-
-    .contact-details h3 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--primary);
-      margin-bottom: 16px;
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      margin-bottom: 12px;
-      font-size: 0.9rem;
-      color: var(--text-light);
-    }
-
-    .contact-item svg {
-      width: 18px;
-      height: 18px;
-      fill: var(--accent);
-      flex-shrink: 0;
-      margin-top: 4px;
-    }
-
-    .contact-item a {
-      color: var(--text-light);
-      text-decoration: none;
-      transition: var(--transition);
-    }
-
-    .contact-item a:hover {
-      color: var(--accent);
-    }
-
-    .firm-name {
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--accent);
-      letter-spacing: 0.5px;
-    }
-
-    .last-updated {
-      text-align: center;
-      margin-top: 24px;
-      font-size: 0.85rem;
-      color: #999;
-    }
-
-    footer {
-      background: var(--primary);
-      padding: 24px 0;
-      text-align: center;
-    }
-
-    footer p {
-      color: rgba(255,255,255,0.4);
-      font-size: 0.85rem;
-      margin: 0;
-    }
-
-    @media (max-width: 768px) {
-      .page-title h1 {
-        font-size: 1.6rem;
-      }
-
-      .privacy-card {
-        padding: 28px 20px;
-      }
+    .nav-item:hover::after {
+      width: 100%;
     }
   </style>
 </head>
-<body>
 
-  <header>
-    <div class="container">
-      <a href="index.html" class="logo">Krishna Agarwal <span>&amp; Associates</span></a>
-      <a href="index.html#contact" class="back-link">
-        <svg viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"/></svg>
-        Back
+<body class="font-body-md text-on-surface bg-slate-50 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 h-24 flex items-center transition-all duration-300" id="main-header">
+    <div
+      class="max-w-container-max mx-auto w-full px-margin-mobile md:px-margin-desktop flex justify-between items-center">
+      <a class="font-headline-md font-bold tracking-tight text-white uppercase text-xl" href="index.html">
+        KRISHNA AGARWAL <span class="font-normal">&amp;</span> ASSOCIATES
       </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="nav-item font-label-caps text-sm tracking-widest text-white/90 hover:text-white relative"
+          href="index.html">HOME</a>
+        <a class="nav-item font-label-caps text-sm tracking-widest text-white/90 hover:text-white relative"
+          href="index.html#services">SERVICES</a>
+        <a class="nav-item font-label-caps text-sm tracking-widest text-white/90 hover:text-white relative"
+          href="index.html#about">ABOUT</a>
+        <a class="nav-item font-label-caps text-sm tracking-widest text-white/90 hover:text-white relative"
+          href="index.html#contact">CONTACT</a>
+        <a class="nav-item font-label-caps text-sm tracking-widest text-white relative text-accent-gold"
+          href="privacy-policy.html">PRIVACY POLICY</a>
+      </nav>
+      <button class="md:hidden flex items-center justify-center p-2 text-white" onclick="toggleDrawer()">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
     </div>
   </header>
 
-  <div class="page-content">
-    <div class="container">
-      <div class="page-title">
-        <h1>Privacy Policy</h1>
-      </div>
-      <div class="privacy-card">
-        <p>This website is intended solely to provide general information regarding the professional practice and contact details.</p>
-        <p>No personal information is collected, stored, processed, or shared through this website.</p>
-        <p>Visitors may contact us directly using the contact details provided on this website. Any communication initiated by a visitor is voluntary.</p>
-        <p>This website does not sell, rent, or disclose personal information to third parties.</p>
+  <!-- Mobile Drawer Overlay -->
+  <div class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] hidden opacity-0 transition-opacity duration-300"
+    id="drawer-overlay" onclick="toggleDrawer()"></div>
 
-        <div class="contact-details">
-          <h3>Contact</h3>
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/></svg>
-            <span><strong style="color:var(--primary);">Krishna Agarwal</strong></span>
+  <!-- Navigation Drawer -->
+  <aside
+    class="h-full w-full max-w-sm fixed right-0 top-0 z-[70] bg-white translate-x-full transition-transform duration-500 ease-in-out flex flex-col p-8"
+    id="nav-drawer">
+    <div class="flex justify-between items-center mb-16">
+      <div class="font-label-caps text-sm tracking-widest text-outline">MENU</div>
+      <button class="hover:rotate-90 transition-transform duration-300" onclick="toggleDrawer()">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-8">
+      <a class="text-3xl font-bold text-primary" href="index.html" onclick="toggleDrawer()">Home</a>
+      <a class="text-3xl font-bold text-primary" href="index.html#services" onclick="toggleDrawer()">Services</a>
+      <a class="text-3xl font-bold text-primary" href="index.html#about" onclick="toggleDrawer()">About</a>
+      <a class="text-3xl font-bold text-primary" href="index.html#founder" onclick="toggleDrawer()">Founder</a>
+      <a class="text-3xl font-bold text-primary" href="index.html#contact" onclick="toggleDrawer()">Contact</a>
+      <a class="text-3xl font-bold text-accent-gold" href="privacy-policy.html" onclick="toggleDrawer()">Privacy Policy</a>
+    </nav>
+    <div class="mt-auto pt-10 border-t border-outline-variant text-sm text-outline">
+      © 2026 Krishna Agarwal &amp; Associates
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+    <!-- Hero / Header Section -->
+    <section class="hero-gradient py-32 md:py-40 px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+      <div class="absolute inset-0 grid-pattern opacity-30"></div>
+      <div class="max-w-container-max mx-auto relative z-10 text-center mt-6">
+        <h1 class="font-headline-xl text-white text-4xl md:text-5xl font-bold mb-4 tracking-tight">Privacy Policy</h1>
+        <p class="font-label-caps text-xs md:text-sm tracking-[0.2em] text-accent-gold uppercase font-medium">Krishna Agarwal &amp; Associates</p>
+      </div>
+    </section>
+
+    <!-- Policy Content Section -->
+    <section class="py-16 px-margin-mobile md:px-margin-desktop bg-[#f8fafc] -mt-10 relative z-20">
+      <div class="max-w-3xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-8 md:p-12 space-y-8">
+          <div class="space-y-6 text-slate-600 leading-relaxed font-light text-[0.95rem] md:text-[1rem]">
+            <p>This website is intended solely to provide general information regarding the professional practice and contact details.</p>
+            <p>No personal information is collected, stored, processed, or shared through this website.</p>
+            <p>Visitors may contact us directly using the contact details provided on this website. Any communication initiated by a visitor is voluntary.</p>
+            <p>This website does not sell, rent, or disclose personal information to third parties.</p>
           </div>
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24"><path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/></svg>
-            <span>92 A, Sarveshwar Nagar Main Road, Sarveshwar Nagar, Ajmer, Ajmer Tehsil, Rajasthan - 305001, India</span>
+
+          <!-- Contact Details Section -->
+          <div class="pt-8 border-t border-slate-100">
+            <h3 class="font-headline-md text-primary text-xl font-semibold mb-6 flex items-center gap-2">
+              <span class="material-symbols-outlined text-accent-gold">contact_support</span>
+              Contact
+            </h3>
+            
+            <div class="grid grid-cols-1 gap-6">
+              <!-- Contact Person -->
+              <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100/50">
+                <span class="material-symbols-outlined text-primary text-2xl mt-1">person</span>
+                <div>
+                  <h4 class="font-semibold text-slate-800 text-sm mb-0.5">Contact Person</h4>
+                  <p class="text-primary font-semibold text-[0.95rem]">Krishna Agarwal</p>
+                </div>
+              </div>
+
+              <!-- Address -->
+              <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100/50">
+                <span class="material-symbols-outlined text-primary text-2xl mt-1">location_on</span>
+                <div>
+                  <h4 class="font-semibold text-slate-800 text-sm mb-0.5">Office Address</h4>
+                  <p class="text-slate-600 font-light text-[0.9rem] leading-relaxed">
+                    92 A, Sarveshwar Nagar, Ajmer, Rajasthan- 305001, India
+                  </p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Phone -->
+                <a href="tel:+919867086481" class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100/50 group">
+                  <span class="material-symbols-outlined text-primary group-hover:text-accent-gold transition-colors text-2xl mt-1">call</span>
+                  <div>
+                    <h4 class="font-semibold text-slate-800 text-sm mb-0.5">Phone Number</h4>
+                    <p class="text-primary font-medium text-[0.9rem]">+91 9867086481</p>
+                  </div>
+                </a>
+
+                <!-- Email -->
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=info@krishnaagarwalassociates.co.in" target="_blank" rel="noopener noreferrer" class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100/50 group">
+                  <span class="material-symbols-outlined text-primary group-hover:text-accent-gold transition-colors text-2xl mt-1">mail</span>
+                  <div>
+                    <h4 class="font-semibold text-slate-800 text-sm mb-0.5">Email Address</h4>
+                    <p class="text-primary font-medium text-[0.9rem] break-all">info@krishnaagarwalassociates.co.in</p>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg>
-            <a href="tel:+919867086481">+91 9867086481</a>
-          </div>
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24"><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/></svg>
-            <a href="mailto:a.krrish@gmail.com">a.krrish@gmail.com</a>
+
+          <div class="pt-6 text-center text-xs text-slate-400 font-light italic">
+            Last Updated: June 2026
           </div>
         </div>
       </div>
-      <p class="last-updated">Last Updated: June 2026</p>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 Krishna Agarwal &amp; Associates. All Rights Reserved.</p>
+  <!-- Footer -->
+  <footer class="text-white py-10 px-margin-mobile md:px-margin-desktop w-full bg-[#0d1b2a]">
+    <div class="max-w-container-max mx-auto">
+      <div class="flex flex-col md:flex-row justify-around items-center md:items-start pb-8 border-b border-white/10 text-center md:text-left gap-4">
+        <div class="flex flex-col items-center md:items-start max-w-md">
+          <div class="font-headline-md font-bold tracking-tight text-white uppercase text-xl mb-3">
+            KRISHNA AGARWAL <span class="font-normal text-white">&amp;</span> ASSOCIATES
+          </div>
+          <p class="font-body-md text-white/50 leading-relaxed font-light text-[0.95rem]">
+            Chartered Accountants providing professional financial and compliance solutions with integrity and excellence.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center md:items-start">
+          <h4 class="font-label-caps text-sm tracking-[0.2em] text-accent-gold mb-4 uppercase font-medium">Quick Links</h4>
+          <div class="flex flex-row md:flex-col gap-4 md:gap-3 justify-center md:justify-start items-center md:items-start flex-wrap">
+            <a class="text-white/40 hover:text-accent-gold transition-colors font-label-caps text-sm tracking-widest" href="index.html">HOME</a>
+            <a class="text-white/40 hover:text-accent-gold transition-colors font-label-caps text-sm tracking-widest" href="index.html#services">SERVICES</a>
+            <a class="text-white/40 hover:text-accent-gold transition-colors font-label-caps text-sm tracking-widest" href="index.html#about">ABOUT</a>
+            <a class="text-white/40 hover:text-accent-gold transition-colors font-label-caps text-sm tracking-widest" href="index.html#contact">CONTACT</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center md:items-start">
+          <h4 class="font-label-caps text-sm tracking-[0.2em] text-accent-gold mb-4 uppercase font-medium">Pages</h4>
+          <div class="flex flex-row md:flex-col gap-4 md:gap-3 justify-center md:justify-start items-center md:items-start flex-wrap">
+            <a class="text-white/40 hover:text-accent-gold transition-colors font-label-caps text-sm tracking-widest text-accent-gold" href="privacy-policy.html">PRIVACY POLICY</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-4 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-[0.75rem] text-white/40 font-light tracking-wide text-center md:text-left w-full">
+          © 2026 Krishna Agarwal &amp; Associates. All rights reserved.
+        </p>
+      </div>
     </div>
   </footer>
 
+  <!-- Bottom Navigation Bar (Mobile View) -->
+  <nav
+    class="fixed bottom-0 w-full z-50 bg-white/90 backdrop-blur-lg border-t border-silver-gray flex justify-around items-center h-16 md:hidden">
+    <a class="flex flex-col items-center justify-center text-primary" href="index.html">
+      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+      <span class="text-[9px] font-bold uppercase tracking-widest mt-1">Home</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-outline hover:text-primary" href="index.html#services">
+      <span class="material-symbols-outlined">business_center</span>
+      <span class="text-[9px] font-bold uppercase tracking-widest mt-1">Services</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-outline hover:text-primary" href="index.html#contact">
+      <span class="material-symbols-outlined">call</span>
+      <span class="text-[9px] font-bold uppercase tracking-widest mt-1">Contact</span>
+    </a>
+  </nav>
+
+  <script>
+    // Header background change on scroll
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 50) {
+        header.classList.add('bg-[#1e3c5a]/95', 'backdrop-blur-md', 'shadow-lg');
+      } else {
+        header.classList.remove('bg-[#1e3c5a]/95', 'backdrop-blur-md', 'shadow-lg');
+      }
+    });
+
+    function toggleDrawer() {
+      const drawer = document.getElementById('nav-drawer');
+      const overlay = document.getElementById('drawer-overlay');
+      const isOpen = !drawer.classList.contains('translate-x-full');
+
+      if (isOpen) {
+        drawer.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+        overlay.classList.remove('opacity-100');
+        document.body.style.overflow = 'auto';
+      } else {
+        drawer.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+        setTimeout(() => overlay.classList.add('opacity-100'), 10);
+        document.body.style.overflow = 'hidden';
+      }
+    }
+  </script>
+
 </body>
+
 </html>
